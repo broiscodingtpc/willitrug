@@ -286,17 +286,65 @@ pre {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding-top: 140px;
+    }
+
     .logo {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 120px;
-        margin: 0 0 1rem 0;
+        position: fixed;
+        left: 50%;
+        top: 1rem;
+        transform: translateX(-50%);
+        width: 100px;
+        margin: 0;
+        z-index: 100;
     }
 
     header {
         margin-left: 0;
         padding-top: 0;
+    }
+
+    .token-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-container {
+        margin-top: 1rem;
+    }
+
+    .fate-choices {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 120px;
+        padding: 120px 1rem 1rem 1rem;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .token-info span {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
     }
 }
 
